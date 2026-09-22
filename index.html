@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人名片</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        p {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+        .link {
+            display: block;
+            background: #fff;
+            color: #333;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .link:hover {
+            transform: scale(1.05);
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="avatar">src="https://images.gameinfo.io/pokemon/256/p143f157.webp"alt = "頭像">
+        <!-- 💡 這裡可以改成你自己的名字 -->
+        <h1>你的名字</h1>
+        <p>歡迎來到我的個人導航名片</p>
+        
+        <!-- 💡 這裡可以改成你自己的 GitHub 網址 -->
+        <a href="https://github.com" class="link" target="_blank">我的 GitHub</a>
+        <a href="https://google.com" class="link" target="_blank">常用的網站</a>
+    </div>
+</body>
+</html>
